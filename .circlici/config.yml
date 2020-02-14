@@ -1,0 +1,21 @@
+version: 2.1
+jobs:
+  test-cases:
+    docker:
+      - image: sunbird/build:player
+    steps:
+      - checkout
+      - run:
+          name: Installing angular cli
+          command: 'npm install -g @angular/cli@6.0.8'
+      - run:
+          name: Run Test cases
+          command: 'ng test --code-coverage=true'
+      - run:
+          name: Run Build
+          command: 'ng build'
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - test-cases
