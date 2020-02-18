@@ -14,6 +14,7 @@ jobs:
       - run:
           name: send test case to sonarcloud
           command: 'go tool cover -html=c.out -o coverage.html'
+
 workflows:
   version: 2
   build_and_test:
