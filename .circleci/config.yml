@@ -2,9 +2,15 @@ version: 2.1
 jobs:
   test-cases:
     docker:
-      - image: kingalt/go-gcc:1.1
+      - image: golang:latest
     steps:
       - checkout
+      - run:
+          name: Install Dependencies
+          command: 'apt update && apt install nodejs npm -y'
+      - run:
+          name: Install sonarqube scanner
+          command: 'npm install -g sonarqube-scanner'
       - run:
           name: run the test cases
           command: 'go test -cover -coverprofile=c.out'
