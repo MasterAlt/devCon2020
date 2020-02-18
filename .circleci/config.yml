@@ -2,15 +2,15 @@ version: 2.1
 jobs:
   test-cases:
     docker:
-      - image: sunbird/build:player
+      - image: golang:1.12.1-alpine3.9
     steps:
       - checkout
       - run:
-          name: Installing angular cli
-          command: 'npm install -g @angular/cli@6.0.8'
+          name: run the test cases
+          command: 'go test -cover -coverprofile=c.out'
       - run:
-          name: Run Test cases
-          command: 'ng test --code-coverage=true'
+          name: Generate the test cases
+          command: 'go tool cover -html=c.out -o coverage.html'
       - run:
           name: Run Build
           command: 'ng build'
