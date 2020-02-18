@@ -30,11 +30,11 @@ func Addition(x int) int {
 func Add(x int) int {
     // Implicit addition with 20
     var1 := 20
-    return x + 20
+    return x + var1
 }
 
 func Merge(x int) int {
     // Implicit addition with 30
     var1 := 30
-    return x + 30
+    return x + var1
 }
