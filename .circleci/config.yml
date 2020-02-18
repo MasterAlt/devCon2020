@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   test-cases:
     docker:
-      - image: tetafro/golang-gcc
+      - image: kingalt/go-gcc:1.1
     steps:
       - checkout
       - run:
