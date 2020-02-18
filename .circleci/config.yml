@@ -13,7 +13,7 @@ jobs:
           command: 'go tool cover -html=c.out -o coverage.html'
       - run:
           name: send test case to sonarcloud
-          command: 'go tool cover -html=c.out -o coverage.html'
+          command: 'sonar-scanner'
 
 workflows:
   version: 2
