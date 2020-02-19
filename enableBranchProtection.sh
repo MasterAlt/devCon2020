@@ -28,7 +28,8 @@ elif [[ $check == "3" ]]; then
                       "ci/circleci: build"'
 else
         echo "Provide correct value!"
-ficurl -u $user:$pass -XPUT \
+fi
+curl -u $user:$pass -XPUT \
      -H 'Accept: application/vnd.github.luke-cage-preview+json' \
      -d '{
       "protection": {
