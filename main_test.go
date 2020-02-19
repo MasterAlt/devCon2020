@@ -9,21 +9,21 @@ func TestSum(t *testing.T) {
     }
 }
 
-func TestAdd(t *testing.T) {
-    total := Add(10)
+func TestAdd20(t *testing.T) {
+    total := Add20(10)
     if total != 30 {
        t.Errorf("Sum was incorrect, got: %d, want: %d.", total, 30)
     }
 }
 
-func TestAddition(t *testing.T) {
+func TestAdd10(t *testing.T) {
     total := Addition(10)
     if total != 20 {
        t.Errorf("Sum was incorrect, got: %d, want: %d.", total, 20)
     }
 }
 
-func TestMerge(t *testing.T) {
+func TestAdd30(t *testing.T) {
     total := Merge(0)
     if total != 30 {
        t.Errorf("Sum was incorrect, got: %d, want: %d.", total, 30)

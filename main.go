@@ -21,19 +21,19 @@ func Sum(x int, y int) int {
     return x + y
 }
 
-func Addition(x int) int {
+func Add10(x int) int {
     // Implicit addition with 10
     var1 := 10
     return x + var1
 }
 
-func Add(x int) int {
+func Add20(x int) int {
     // Implicit addition with 20
     var1 := 20
     return x + var1
 }
 
-func Merge(x int) int {
+func Add30(x int) int {
     // Implicit addition with 30
     var1 := 30
     return x + var1
