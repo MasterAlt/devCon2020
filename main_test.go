@@ -17,14 +17,14 @@ func TestAdd20(t *testing.T) {
 }
 
 func TestAdd10(t *testing.T) {
-    total := Addition(10)
+    total := Add10(10)
     if total != 20 {
        t.Errorf("Sum was incorrect, got: %d, want: %d.", total, 20)
     }
 }
 
 func TestAdd30(t *testing.T) {
-    total := Merge(0)
+    total := Add30(0)
     if total != 30 {
        t.Errorf("Sum was incorrect, got: %d, want: %d.", total, 30)
     }
