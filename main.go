@@ -7,7 +7,7 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "Welcome to Devcon 2020 \nThis is the version 2 of the application")
+	fmt.Fprintln(w, "Welcome to Devcon 2020 \nThis is the 1st version of the application")
 }
 
 func main() {
