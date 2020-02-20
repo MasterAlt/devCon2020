@@ -7,8 +7,7 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-    addition := Sum(5, 5)
-	fmt.Fprintln(w, "This is the version 2 of the application \nIn Sum Module The Sample Value is",addition)
+	fmt.Fprintln(w, "Welcome to Devcon 2020 \nThis is the 1st version of the application")
 }
 
 func main() {
