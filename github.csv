@@ -1,5 +1,5 @@
 #REPO_NAME,BRANCH_NAME,TAG_NAME,MERGE_ACCESS_USERS(;),CHECKS
-devconGitOps,master,,1
+devcon2020,master,,1
 #NOTE:
 #MERGE_ACCESS_USERS SHOULD BE (;) seperated
 #CHECKS: 1.codacy 2.cirleci 3.both

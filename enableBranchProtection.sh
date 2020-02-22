@@ -1,5 +1,5 @@
 #!/bin/bash -xv
-orgName="DevCon2020"
+orgName="MasterAlt"
 read -p "Enter the github username: " user
 read -sp "Enter the password: " pass
 echo " "
