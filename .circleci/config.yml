@@ -21,6 +21,7 @@ jobs:
           name: send test case to sonarcloud
           command: 'sonar-scanner'
       - store_artifacts:
+          name: Storing the test coverage report
           path: coverage.html
           prefix: coverage
 
