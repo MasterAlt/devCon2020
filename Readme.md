@@ -4,5 +4,3 @@
 
 # Alexa code sample example code:
 * https://github.com/alexa/skill-sample-python-helloworld-classes
-
-
